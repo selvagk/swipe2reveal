@@ -1,6 +1,6 @@
 
 /*!
-	Mobile-Menu-Slider v1.0
+	Swipe to reveal - Twitter Mobile slider v1.0
 	Original by Selvaganapathy Kaliamurthy: http://Selvagk.com
 	Get the latest version: https://github.com/selvagk/Mobile-Menu-Slider
 
@@ -19,7 +19,7 @@
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
 body{line-height:1}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;zoom:1;}
-nav ul{list-style:none}
+nav ul,ul{list-style:none;padding:0;margin:0}
 blockquote,q{quotes:none}
 blockquote:before,blockquote:after,q:before,q:after{content:none}
 a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
@@ -33,7 +33,28 @@ input,select{vertical-align:middle}
 
 /**** webkit based touch Devices***/
 *{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-text-size-adjust:none;-webkit-user-select:none;-webkit-touch-callout:none}
-body{overflow:hidden}
+body{background-color:#E8E8E8; font-family:'Helvetica Neue', Arial, Helvetica, 'Liberation Sans', FreeSans, sans-serif;font-size:12px;line-height:19px}
+
+/***App Specific CSS***/
+nav{overflow:hidden; background-image:-webkit-gradient( linear, left top, left bottom, from(#444), to(#0E0E0E));padding:4px 0;}
+nav li{float:left;width:25%;text-align:center;}
+nav img{width:30px;height:30px;}
+.reveal img{width:20px;height:20px;}
+
+
+section{ background-color:#FFF;border:1px solid #D7D7D7;border-radius:8px;margin:10px}
+section li{border-bottom:1px solid #D7D7D7;overflow:hidden;height:65px;position:relative}
+section li:last-child{border:none}
+
+.swipe{float:left;}
+.container{width:90%;}
+.swipe,.reveal{padding:15px;overflow-x:hidden;width:100%;position:absolute;-webkit-transition-property: -webkit-transform;-webkit-transition-duration: 0.1s;-webkit-transition-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-backface-visibility: hidden;}
+.reveal{float:right;-webkit-transform: translate3d(100%, 0, 0);background-color:#E8E8E8;border-bottom:1px solid #BBB;border-top:1px solid #BBB;background-image: url(images/dotted-pattern.png);
+background-repeat: repeat;
+background-size: 4px 4px}
+.reveal li{display:inline-block;width:20%;}
+.swipedL .swipe{-webkit-transform:translate3d(-100%,0,0)}
+.swipedL .reveal{-webkit-transform:translate3d(0,0,0)}
 
 
 
