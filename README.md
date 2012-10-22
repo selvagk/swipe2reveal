@@ -16,7 +16,6 @@ Features:
 
 1.Uses CSS3 3D Transforms creates a smooth sliding of menu optimized only for webkit based touch devices.
 
-2.The first time of page load, menu slides and hides on its own - works as a contextual help (Local Storage to control it).
 
 
 
