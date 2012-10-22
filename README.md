@@ -24,3 +24,8 @@ Options:
 ======
 
 1.Change the  ".swipe/.reveal" class  "-webkit-transition-duration" rule in app.css to change the timing of the slider
+
+Demo:
+=====
+
+http://www.youtube.com/watch?v=jNArGX8I4SI
